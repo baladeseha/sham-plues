@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --sp-bg: #080c14;
+    --sp-surface: #0f1623;
+    --sp-surface-elevated: #151e2f;
+    --sp-border: rgba(148, 163, 184, 0.14);
+    --sp-gold: #c9a227;
+    --sp-gold-soft: #e0be53;
+    --sp-profit: #0ecb81;
+    --sp-loss: #f6465d;
+  }
+
+  html,
+  body {
+    font-family: 'Cairo', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--sp-bg);
+    color: #f1f5f9;
+    overflow-x: hidden;
+  }
+}
+
+.font-mono-num {
+  font-family: 'IBM Plex Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle luxury scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080c14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.22);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(201, 162, 39, 0.45);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

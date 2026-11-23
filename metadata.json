@@ -1,0 +1,6 @@
+{
+  "name": "Sham Plus",
+  "description": "بوابتك الذكية لأسواق المال، تداول الذهب، وإدارة المحافظ الاستثمارية بمرونة وأمان.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
